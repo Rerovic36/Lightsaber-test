@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Lightsaber-test/static/css/main.7e57f83b.css",
+    "main.js": "/Lightsaber-test/static/js/main.3aaded90.js",
+    "static/js/453.d116f1d7.chunk.js": "/Lightsaber-test/static/js/453.d116f1d7.chunk.js",
+    "static/media/saber-long2.mp3": "/Lightsaber-test/static/media/saber-long2.554e0e32afad77030cf9.mp3",
+    "static/media/saber.png": "/Lightsaber-test/static/media/saber.012b285abcf518c6b392.png",
+    "static/media/saber-stop.mp3": "/Lightsaber-test/static/media/saber-stop.bafa6aa9ff57b6d224ab.mp3",
+    "index.html": "/Lightsaber-test/index.html",
+    "main.7e57f83b.css.map": "/Lightsaber-test/static/css/main.7e57f83b.css.map",
+    "main.3aaded90.js.map": "/Lightsaber-test/static/js/main.3aaded90.js.map",
+    "453.d116f1d7.chunk.js.map": "/Lightsaber-test/static/js/453.d116f1d7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e57f83b.css",
+    "static/js/main.3aaded90.js"
+  ]
+}
