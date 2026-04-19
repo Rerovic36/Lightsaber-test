@@ -1,31 +1,192 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  /* align-items: center; */
+  background-color: rgb(0, 0, 0);
+  height: 2500px;
 }
+.lightsaber{
+  position: relative;
+  min-height: 200px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.parts{
+  margin-top: -500px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Para que ocupe todo el ancho si lo deseas */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.space{
+  background-color: rgb(0, 0, 0);
+  height: 100px;
+}
+.botones{
+  display: grid;
+  width: 100px;
+  z-index: 1;
+  
+}
+.botones button{
+  margin-top: 15px;
+  padding: 5px;
+  font-size: 15px;
   color: white;
+  margin-left: 15px;
+  border: none;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px white */
 }
+.botones button:hover{
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+.green{
+  margin-left: 235px;
+  height: 800px;
+  width: 45px;
+  position: relative;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: aliceblue;
+  margin-bottom: -31px;
+  z-index: 2;
+  /* box-shadow: 0 0 5px rgb(61, 250, 77),
+              0 0 25px rgb(61, 250, 77),
+              0 0 50px rgb(61, 250, 77),
+              0 0 100px rgb(61, 250, 77); */
+                              animation: ignite 1.0s forwards;
 
-.App-link {
-  color: #61dafb;
+}
+.green-off{
+  margin-left: 235px;
+  height: 800px;
+  width: 45px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: aliceblue;
+  margin-bottom: -29px;
+  z-index: -1;
+  /* box-shadow: 0 0 5px rgb(61, 250, 77),
+              0 0 25px rgb(61, 250, 77),
+              0 0 50px rgb(61, 250, 77),
+              0 0 100px rgb(61, 250, 77); */
+                              animation: ignite-off 1.0s forwards;
+
+}
+.blue{
+  margin-left: 235px;
+  height: 800px;
+  width: 45px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: aliceblue;
+  margin-bottom: -29px;
+  box-shadow: 0 0 5px rgb(52, 208, 255),
+              0 0 25px rgb(52, 208, 255),
+              0 0 50px rgb(52, 208, 255),
+              0 0 100px rgb(52, 208, 255);
+  transition: transform 100ms ease-out;
+  transform-origin: top;   
+                  animation: ignite 1.5s forwards;
+}
+.boton-verde{
+  background: green;
+
+}
+.boton-azul{
+  background: rgb(26, 14, 199);
+}
+.boton-aqua{
+  background: rgb(108, 231, 190);
+}
+.boton-rojo{
+  background: rgb(245, 29, 29);
+}
+.red{
+  margin-left: 235px;
+  height: 800px;
+  width: 45px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: aliceblue;
+  margin-bottom: -29px;
+  box-shadow: 0 0 5px rgb(245, 28, 21),
+              0 0 25px rgb(245, 28, 21),
+              0 0 50px rgb(245, 28, 21),
+              0 0 100px rgb(245, 28, 21);
+                              animation: ignite 1.5s forwards;
+        
+}
+.red-bad{
+  margin-left: 235px;
+  height: 800px;
+  width: 45px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: aliceblue;
+  margin-bottom: -29px;
+  box-shadow: 0 0 5px rgb(245, 28, 21),
+              0 0 25px rgb(245, 28, 21),
+              0 0 50px rgb(245, 28, 21),
+              0 0 100px rgb(245, 28, 21);
+                            border :2px solid red;
+              animation: flicker 0.2s infinite linear;
+                  transition: 0.5s;
+}
+.red-bad:before{
+  margin-left: 235px;
+  height: 800px;
+  width: 45px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: aliceblue;
+  margin-bottom: -29px;
+  box-shadow: 0 0 5px rgb(245, 28, 21),
+              0 0 25px rgb(245, 28, 21),
+              0 0 50px rgb(245, 28, 21),
+              0 0 100px rgb(245, 28, 21);
+              border :2px solid red;
+                animation: ignite 1.5s forwards;
+              /* animation: flicker 0.2s infinite linear;
+                  transition: 0.5s; */
+}
+.black{
+  margin-left: 235px;
+  height: 800px;
+  width: 45px;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 450px;
+  background: rgb(0, 0, 0);
+  margin-bottom: -29px;
+  box-shadow: 0 0 5px rgb(255, 255, 255),
+              0 0 25px rgb(255, 255, 255),
+              0 0 50px rgb(255, 255, 255),
+              0 0 100px rgb(255, 255, 255);
+  transition: trans 50ms ease-out;
+  transform-origin: bottom;            
+}
+.nothing{
+  margin-left: 235px;
+  height: 800px;
+  width: 45px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: rgb(0, 0, 0);
+  margin-bottom: -29px;
+    transition: 0.5s;
+    animation: ignite-off 1.5s forwards;
+                                  /* animation: ignite 1.0s forwards; */
+}
+.saber{
+  position: relative;
+  margin-left: 210px;
+  height: 320px;
+  width: 100px;
+  z-index: 1000;
+}
+.saber:hover{
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +195,33 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes ignite {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  70% {
+    height: 800px; /* Desired final height */
+    opacity: 1;
+  }
+  100% {
+    height: 800px;
+    opacity: 1;
+  }
+}
+@keyframes ignite-off {
+  0% {
+    height: 800px;
+    opacity: 1;
+  }
+  70% {
+    height: 10px; /* Desired final height */
+    opacity: 1;
+  }
+  100% {
+    height: 0px;
+    opacity: 0;
   }
 }
