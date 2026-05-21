@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App">
         <div className='botones'>
-        <button className='boton-verde' onClick={(e) =>{setShadowColor('green')}}>Saber green</button>
+        <button className={'boton-verde'} onClick={(e) =>{setShadowColor('green')}}>Saber green</button>
         <button className={'boton-azul'} onClick={(e) =>{setShadowColor('blue')}}>Saber blue</button>
         <button className={'boton-aqua'} onClick={(e) =>{setShadowColor('aquamarine')}}>Saber aqua</button>
         <button className={'boton-rojo'} onClick={(e) =>{setShadowColor('red')}}>Saber red</button>

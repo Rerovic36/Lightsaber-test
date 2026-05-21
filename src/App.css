@@ -11,13 +11,17 @@
   min-height: 200px;
 
 }
+
 .parts{
   margin-top: -500px;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%; /* Para que ocupe todo el ancho si lo deseas */
+  width: 50px; 
+  /* Para que ocupe todo el ancho si lo deseas */
 }
+
+
 .space{
   background-color: rgb(0, 0, 0);
   height: 100px;
@@ -25,7 +29,8 @@
 .botones{
   display: grid;
   width: 100px;
-  z-index: 1;
+  z-index: 5;
+  margin-right: 100px;
   
 }
 .botones button{
